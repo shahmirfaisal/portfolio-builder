@@ -8,6 +8,7 @@ import { useState } from "react";
 import About from "../../components/About";
 import Contact from "../../components/Contact";
 import Skills from "../../components/Skills";
+import Projects from "../../components/Projects";
 
 const TabComponent = ({ children }) => {
   return (
@@ -76,7 +77,9 @@ const CreatePortfolioPage = ({ user }) => {
               <Skills />
             </PanelComponent>
 
-            <PanelComponent onMove={moveHandler}>Projects</PanelComponent>
+            <PanelComponent onMove={moveHandler}>
+              <Projects />
+            </PanelComponent>
 
             <PanelComponent title="Contact" onMove={moveHandler}>
               <Contact />
